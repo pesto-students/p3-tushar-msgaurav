@@ -1,36 +1,56 @@
 // __________SASS File__________ //
 
+// Adding Font
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 // Variable Declaration
 $color: #007bff;
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0px;
-  padding: 0px;
   height: 100%;
   width: 100%;
-  font-family: Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
 }
 
-h1,
-h2,
-p {
-  margin: 0;
-  padding: 0;
+// Wrapper
+#cattyboard_wrapper {
+
+  aside {
+    .nav_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: absolute;
+      height: 90%;
+      width: 3%;
+      background-color: lightgray;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .footer_container {
+    position: fixed;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: royalblue;
+  }
+
 }
 
 // Media Queries
-@media screen and (max-width: 800px) {
-  .banner-image img {
-    display: none;
-  }
-
-  #trends-container {
-    display: none;
-  }
-}
+@media screen and (max-width: 800px) {}
