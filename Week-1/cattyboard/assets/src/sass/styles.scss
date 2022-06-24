@@ -20,34 +20,119 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 // Wrapper
 #cattyboard_wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  aside {
-    .nav_container {
+  .main-top_container {
+    flex: 1;
+    display: flex;
+
+    aside {
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      position: absolute;
-      height: 90%;
-      width: 3%;
-      background-color: lightgray;
 
-      a {
-        text-decoration: none;
-        color: black;
-        font-size: 1.2rem;
+      .nav_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        padding: 0 1rem;
+        background-color: lightgray;
+
+        a {
+          color: black;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .header-section_container {
+      flex: 1;
+
+      header {
+        background-color: dimgray;
+        color: white;
+        padding: 3rem;
+        display: flex;
+
+        .header_image {
+          margin-right: 5rem;
+        }
+
+        .header_content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-bottom: 0.1rem;
+
+          div:nth-child(1) {
+            h1 {
+              margin-bottom: 1rem;
+            }
+
+            p {
+              margin-bottom: 0.2rem;
+            }
+          }
+
+          div:nth-child(2) {
+            a {
+              margin-right: 1rem;
+            }
+          }
+        }
       }
     }
   }
 
   .footer_container {
-    position: fixed;
-    bottom: 0;
-    height: 10%;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: royalblue;
+    color: white;
+    padding: 1.5rem;
+
+    .album-logo-title_box {
+      flex: 2;
+      display: flex;
+      align-items: center;
+
+      div:nth-child(1) {
+        margin-right: 2rem;
+
+        img {
+          width: 100px;
+          height: 100%;
+        }
+      }
+
+      div:nth-child(2) {
+        p {
+          line-height: 2rem;
+        }
+      }
+    }
+
+    .footer_button-box {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      text-align: right;
+
+      a {
+        font-size: 1.3rem;
+      }
+    }
   }
 
 }

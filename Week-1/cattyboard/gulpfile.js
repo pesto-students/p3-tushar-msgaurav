@@ -9,19 +9,19 @@ const browserSync = require("browser-sync").create();
 // Complie SASS files to Stylesheets with Autoprefixer
 gulp.task("styles", function () {
   return gulp.src("assets/src/sass/*.scss")
-    .pipe(sass().on("error", sass.logError))		// gulp-sass plugin
-    .pipe(autoprefixer("last 2 versions"))			// gulp-autoprefixer plugin
+    .pipe(sass().on("error", sass.logError))    // gulp-sass plugin
+    .pipe(autoprefixer("last 2 versions"))      // gulp-autoprefixer plugin
     .pipe(gulp.dest("assets/dest/css"))
-    .pipe(browserSync.stream());								// browser-sync plugin
+    .pipe(browserSync.stream());                // browser-sync plugin
 });
 
 // Concat JS with Minify JS
 gulp.task("concat-minify-js", function () {
   return gulp.src("assets/src/js/*.js")
-    .pipe(concatJs("app.js"))										// gulp-concat plugin
-    .pipe(uglify()) 														// gulp-uglify plugin
+    .pipe(concatJs("app.js"))                   // gulp-concat plugin
+    .pipe(uglify())                             // gulp-uglify plugin
     .pipe(gulp.dest("assets/dest/js"))
-    .pipe(browserSync.stream());								// browser-sync plugin
+    .pipe(browserSync.stream());                // browser-sync plugin
 });
 
 // Browser Sync Task with Gulp Watcher

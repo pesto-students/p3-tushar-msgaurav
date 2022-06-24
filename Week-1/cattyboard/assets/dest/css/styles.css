@@ -12,7 +12,12 @@ body {
   font-size: 1rem;
   font-family: 'Lato', sans-serif; }
 
-#cattyboard_wrapper aside .nav_container {
+a {
+  text-decoration: none;
+  color: unset; }
+
+#cattyboard_wrapper {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,23 +25,110 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  height: 90%;
-  width: 3%;
-  background-color: lightgray; }
-  #cattyboard_wrapper aside .nav_container a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.2rem; }
-
-#cattyboard_wrapper .footer_container {
-  position: fixed;
-  bottom: 0;
-  height: 10%;
-  width: 100%;
-  background-color: royalblue; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  #cattyboard_wrapper .main-top_container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #cattyboard_wrapper .main-top_container aside {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      #cattyboard_wrapper .main-top_container aside .nav_container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 100%;
+        padding: 0 1rem;
+        background-color: lightgray; }
+        #cattyboard_wrapper .main-top_container aside .nav_container a {
+          color: black;
+          font-size: 1.3rem; }
+    #cattyboard_wrapper .main-top_container .header-section_container {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      #cattyboard_wrapper .main-top_container .header-section_container header {
+        background-color: dimgray;
+        color: white;
+        padding: 3rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        #cattyboard_wrapper .main-top_container .header-section_container header .header_image {
+          margin-right: 5rem; }
+        #cattyboard_wrapper .main-top_container .header-section_container header .header_content {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          padding-bottom: 0.1rem; }
+          #cattyboard_wrapper .main-top_container .header-section_container header .header_content div:nth-child(1) h1 {
+            margin-bottom: 1rem; }
+          #cattyboard_wrapper .main-top_container .header-section_container header .header_content div:nth-child(1) p {
+            margin-bottom: 0.2rem; }
+          #cattyboard_wrapper .main-top_container .header-section_container header .header_content div:nth-child(2) a {
+            margin-right: 1rem; }
+  #cattyboard_wrapper .footer_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: royalblue;
+    color: white;
+    padding: 1.5rem; }
+    #cattyboard_wrapper .footer_container .album-logo-title_box {
+      -webkit-box-flex: 2;
+          -ms-flex: 2;
+              flex: 2;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #cattyboard_wrapper .footer_container .album-logo-title_box div:nth-child(1) {
+        margin-right: 2rem; }
+        #cattyboard_wrapper .footer_container .album-logo-title_box div:nth-child(1) img {
+          width: 100px;
+          height: 100%; }
+      #cattyboard_wrapper .footer_container .album-logo-title_box div:nth-child(2) p {
+        line-height: 2rem; }
+    #cattyboard_wrapper .footer_container .footer_button-box {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      text-align: right; }
+      #cattyboard_wrapper .footer_container .footer_button-box a {
+        font-size: 1.3rem; }
