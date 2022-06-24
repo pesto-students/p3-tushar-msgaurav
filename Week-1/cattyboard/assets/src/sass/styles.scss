@@ -4,7 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 // Variable Declaration
-$color: #007bff;
+$navbar-color: lightgray;
+$header-color: dimgray;
+$footer-color: midnightblue;
 
 * {
   margin: 0;
@@ -46,7 +48,7 @@ a {
         align-items: center;
         height: 100%;
         padding: 0 1rem;
-        background-color: lightgray;
+        background-color: $navbar-color;
 
         a {
           color: black;
@@ -59,9 +61,9 @@ a {
       flex: 1;
 
       header {
-        background-color: dimgray;
+        background-color: $header-color;
         color: white;
-        padding: 3rem;
+        padding: 2rem;
         display: flex;
 
         .header_image {
@@ -91,6 +93,30 @@ a {
           }
         }
       }
+
+      .playlist-section {
+        margin: 1rem;
+
+        .playlist-section-flexbox {
+          display: flex;
+          justify-content: space-between;
+          padding: 1rem;
+
+          div {
+            flex: 1;
+
+            button {
+              padding: 1px;
+              color: blue;
+              text-transform: uppercase;
+            }
+          }
+
+          &:nth-of-type(even) {
+            background-color: $navbar-color;
+          }
+        }
+      }
     }
   }
 
@@ -98,12 +124,12 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: royalblue;
+    background-color: $footer-color;
     color: white;
-    padding: 1.5rem;
+    padding: 1rem;
 
     .album-logo-title_box {
-      flex: 2;
+      flex: 1;
       display: flex;
       align-items: center;
 
@@ -136,6 +162,3 @@ a {
   }
 
 }
-
-// Media Queries
-@media screen and (max-width: 800px) {}

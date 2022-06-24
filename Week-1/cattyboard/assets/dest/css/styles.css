@@ -65,7 +65,7 @@ a {
       #cattyboard_wrapper .main-top_container .header-section_container header {
         background-color: dimgray;
         color: white;
-        padding: 3rem;
+        padding: 2rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
@@ -89,6 +89,26 @@ a {
             margin-bottom: 0.2rem; }
           #cattyboard_wrapper .main-top_container .header-section_container header .header_content div:nth-child(2) a {
             margin-right: 1rem; }
+      #cattyboard_wrapper .main-top_container .header-section_container .playlist-section {
+        margin: 1rem; }
+        #cattyboard_wrapper .main-top_container .header-section_container .playlist-section .playlist-section-flexbox {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          padding: 1rem; }
+          #cattyboard_wrapper .main-top_container .header-section_container .playlist-section .playlist-section-flexbox div {
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1; }
+            #cattyboard_wrapper .main-top_container .header-section_container .playlist-section .playlist-section-flexbox div button {
+              padding: 1px;
+              color: blue;
+              text-transform: uppercase; }
+          #cattyboard_wrapper .main-top_container .header-section_container .playlist-section .playlist-section-flexbox:nth-of-type(even) {
+            background-color: lightgray; }
   #cattyboard_wrapper .footer_container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -99,13 +119,13 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: royalblue;
+    background-color: midnightblue;
     color: white;
-    padding: 1.5rem; }
+    padding: 1rem; }
     #cattyboard_wrapper .footer_container .album-logo-title_box {
-      -webkit-box-flex: 2;
-          -ms-flex: 2;
-              flex: 2;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
