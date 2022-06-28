@@ -31,6 +31,7 @@ The requests are sent using small data packets that contain information content 
 8. Finally, Done.
 
 Refer below diagram for more understanding:
+
 ![web_application_with_html_and_steps](img/web_application_with_html_and_steps.png)
 
 ## a). What is the main functionality of the browser?
@@ -38,6 +39,7 @@ Refer below diagram for more understanding:
 _The main function is to retrieve information from the World Wide Web and making it available for users. Visiting any website can be done using a web browser._
 
 Refer below diagram for more understanding:
+
 ![internet-web_browser_architecture.jpeg](img/internet-web_browser_architecture.jpeg)
 
 ## b). High Level Components of a browser
@@ -60,12 +62,14 @@ The cookies store information as the data store is an uniform layer that the bro
 It allows conversion of JavaScript code in a document and the executes it. Then the engine shows the translation on the screen to the users.
 
 Refer below diagram for more understanding:
+
 ![high-level-components](img/high-level-components.png)
 
 ## c). Rendering engine and its use
 A rendering engine is software that draws text and images on the screen. The engine draws structured text from a document (often HTML), and formats it properly based on the given style declarations (often given in CSS). Examples of layout engines: Blink, Gecko, EdgeHTML, WebKit.
 
 Refer below diagram for more understanding:
+
 ![browserrenders](img/browserrenders.jpeg)
 
 ## d). Parsers (HTML, CSS, etc)
@@ -80,12 +84,15 @@ Refer below diagram for more understanding:
 * Paint paints the elements with colors, backgrounds, shadows, etc.
 
 HTML Parsing:
+
 ![html-parsing](img/html-parsing.png)
 
 CSS Parsing:
+
 ![css-parsing](img/css-parsing.png)
 
 Rendering of Web Page:
+
 ![rendering-of-web-page](img/rendering-of-web-page.png)
 
 ## e). Script Processors
@@ -99,6 +106,7 @@ The Script processor allows you to specify your own processor logic for a simple
 * The last step is paint, which takes in the final render tree and renders the pixels to the screen.
 
 Refer below diagram for more understanding:
+
 ![tree-construction](img/tree-construction.png)
 
 ## g). Order of script processing
@@ -109,6 +117,7 @@ Designing your web page using JavaScript requires attention to the order in whic
 The layout (also called reflow) peace will be in charge to calculate the positions and dimensions of each node on the screen. For instance, if you rotate your phone, or if you resize your browser, the layout peace will be executed.
 
 Let’s take a look another example related to layout:
+
 ![layout](img/layout.png)
 
 **Paint:**<br/>
