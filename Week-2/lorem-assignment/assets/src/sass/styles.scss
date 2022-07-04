@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 // Variable Declaration
-$header-color: cadetblue;
+$header-color: darkcyan;
 $body-color: lightcyan;
 $text-color: darkcyan;
-$footer-color: midnightblue;
+$footer-color: darkcyan;
 
 * {
   margin: 0;
@@ -25,15 +25,16 @@ body {
 }
 
 a {
+  cursor: pointer;
+
   &:hover {
     text-decoration: none;
-    color: $text-color;
+    color: $body-color;
   }
 }
 
 // Wrapper
 #loremipsum_wrapper {
-  text-align: justify;
 
   .header_container {
     background-color: $header-color;
@@ -49,6 +50,7 @@ a {
 
   .main_container {
     padding: 5rem;
+    text-align: justify;
 
     .top_section_container {
       display: flex;
@@ -99,10 +101,63 @@ a {
     }
   }
 
+  .footer_container {
+    padding: 4rem 0;
+    background-color: $footer-color;
+    color: white;
+
+    .footer_form_container {
+      text-align: center;
+
+      .label_input_group {
+        display: block;
+        margin-top: 1rem;
+
+        span:nth-child(1) {
+          display: inline-block;
+          width: 125px;
+          text-align: right;
+          margin-right: 0.5rem;
+        }
+
+        input[type=radio] {
+          margin-left: 4px;
+        }
+
+        .form_input_element {
+          border: none;
+          outline: none;
+          padding: 0.5rem;
+          border-radius: 3px;
+          width: 35%;
+          font-size: 1rem;
+        }
+      }
+
+      .btn_submit {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .copyright_container {
+    padding: 1rem;
+    background-color: black;
+    color: $header-color;
+    text-align: center;
+    font-size: small;
+  }
+
   // Media Queries
   @media screen and (max-width: 800px) {
     .header_container {
       padding: 1.5rem;
+
+      p {
+        font-size: 12px;
+      }
     }
 
     .main_container {
@@ -128,6 +183,27 @@ a {
           margin-bottom: 1rem;
         }
 
+      }
+    }
+
+    .footer_container {
+      padding: 1.5rem;
+
+      .footer_form_container {
+        text-align: left;
+
+        .label_input_group {
+
+          span:nth-child(1) {
+            width: unset;
+            margin-right: 0;
+            margin-bottom: 5px;
+          }
+
+          .form_input_element {
+            width: 100%;
+          }
+        }
       }
     }
   }

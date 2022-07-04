@@ -70,6 +70,74 @@
 
 		</main>
 
+		<footer class="footer_container">
+
+			<!-- Form Container-->
+			<div class="footer_form_container">
+				<form action="/" method="post">
+
+					<div class="label_input_group">
+						<span>Title :</span>
+						<label for="mr">
+							<input type="radio" id="mr" name="title" value="mr" required>
+							<span>Mr.</span>
+						</label>
+						<label for="mrs">
+							<input type="radio" id="mrs" name="title" value="mrs">
+							<span>Mrs.</span>
+						</label>
+						<label for="miss">
+							<input type="radio" id="miss" name="title" value="miss">
+							<span>Miss.</span>
+						</label>
+					</div>
+
+					<label for="first_name" class="label_input_group">
+						<span>First Name :</span>
+						<input class="form_input_element" type="text" id="first_name" placeholder="John" minlength="3"
+							maxlength="32" required>
+					</label>
+
+					<label for="last_name" class="label_input_group">
+						<span>Last Name :</span>
+						<input class="form_input_element" type="text" id="last_name" placeholder="Doe" minlength="3" maxlength="32"
+							required>
+					</label>
+
+					<label for="email" class="label_input_group">
+						<span>Email :</span>
+						<input class="form_input_element" type="email" id="email" placeholder="john_doe@domain.com" required>
+					</label>
+
+					<label for="phone_number" class="label_input_group">
+						<span>Phone Number :</span>
+						<input class="form_input_element" type="tel" id="phone_number" placeholder="9800098000" maxlength="10"
+							required>
+					</label>
+
+					<!-- Form Terms & Conditions Checkbox Button-->
+					<label for="terms_conditions" class="label_input_group">
+						<span></span>
+						<span><input type="checkbox" id="terms_conditions" required> I agree to the <a href="#">terms &
+								conditions</a></span>
+					</label>
+
+					<!-- Form Submit Button-->
+					<div class="label_input_group">
+						<span></span>
+						<input class="form_input_element btn_submit" type="submit">
+					</div>
+
+				</form>
+			</div>
+
+		</footer>
+
+		<!-- Copyright Container-->
+		<div class="copyright_container">
+			<p>&#169; 2022 | A Lorem Ipsum Website. All rights reserved.</p>
+		</div>
+
 	</div>
 </body>
 

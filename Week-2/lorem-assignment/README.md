@@ -1,7 +1,7 @@
 # <a href="https://www.pesto.tech/become-a-developer/" target="_blank"><img src="https://pestotech.b-cdn.net/pesto-logo-black.png" alt="pesto-tech_logo" width="100px"></a>
 
 ## Project Overview
-Welcome to Pesto Tech. This is the [Week-1 Assignment](https://pestotech.teachable.com/courses/1782350/lectures/40231509) by [Pesto Tech](https://www.pesto.tech/become-a-developer/).
+Welcome to Pesto Tech. This is the [Week-2 Assignment](https://pestotech.teachable.com/courses/1782350/lectures/40231509) by [Pesto Tech](https://www.pesto.tech/become-a-developer/).
 
 ### Features
 A simple static web page with responsive.
