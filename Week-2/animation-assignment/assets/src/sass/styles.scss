@@ -4,11 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 // Variable Declaration
-$background-color: lightcyan;
-$color-shade-1: orange;
-$color-shade-2: greenyellow;
-$color-shade-3: skyblue;
-$color-shade-4: yellow;
+$body-bgcolor: #898AA6;
+$box-bgcolor: #F7ECDE;
+$color-shade-1: #F4BFBF;
+$color-shade-2: #C2DED1;
+$color-shade-3: #8CC0DE;
+$color-shade-4: #FAF4B7;
 
 * {
   margin: 0;
@@ -22,7 +23,7 @@ body {
   width: 100%;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
-  background-color: $background-color;
+  background-color: $body-bgcolor;
 }
 
 // Wrapper
@@ -33,7 +34,7 @@ body {
   align-items: center;
 
   .main_container {
-    background-color: white;
+    background-color: $box-bgcolor;
     width: 200px;
     height: 200px;
     display: flex;
@@ -47,38 +48,60 @@ body {
       position: absolute;
       width: 50%;
       height: 50%;
+      transition: transform 1s ease-in-out;
     }
 
-    .grid_box_first, .grid_box_second {
+    .grid_box_first,
+    .grid_box_second {
       top: 0;
     }
 
-    .grid_box_third, .grid_box_fourth {
+    .grid_box_third,
+    .grid_box_fourth {
       bottom: 0;
     }
 
-    .grid_box_first, .grid_box_third {
+    .grid_box_first,
+    .grid_box_third {
       left: 0;
     }
 
-    .grid_box_second, .grid_box_fourth {
+    .grid_box_second,
+    .grid_box_fourth {
       right: 0;
     }
 
     .grid_box_first {
       background-color: $color-shade-1;
+      transform-origin: top left;
     }
 
     .grid_box_second {
       background-color: $color-shade-2;
+      transform-origin: top right;
     }
 
     .grid_box_third {
       background-color: $color-shade-3;
+      transform-origin: bottom left;
     }
 
     .grid_box_fourth {
       background-color: $color-shade-4;
+      transform-origin: bottom right;
+    }
+
+    &:hover {
+
+      .grid_box_first,
+      .grid_box_fourth {
+        transform: rotate(90deg);
+      }
+
+      .grid_box_second,
+      .grid_box_third {
+        transform: rotate(-90deg);
+      }
     }
   }
 

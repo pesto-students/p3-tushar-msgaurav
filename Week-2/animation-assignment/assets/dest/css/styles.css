@@ -11,7 +11,7 @@ body {
   width: 100%;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
-  background-color: lightcyan; }
+  background-color: #898AA6; }
 
 #greeting_box_wrapper {
   height: 100%;
@@ -25,7 +25,7 @@ body {
       -ms-flex-align: center;
           align-items: center; }
   #greeting_box_wrapper .main_container {
-    background-color: white;
+    background-color: #F7ECDE;
     width: 200px;
     height: 200px;
     display: -webkit-box;
@@ -44,20 +44,44 @@ body {
     #greeting_box_wrapper .main_container .grid {
       position: absolute;
       width: 50%;
-      height: 50%; }
-    #greeting_box_wrapper .main_container .grid_box_first, #greeting_box_wrapper .main_container .grid_box_second {
+      height: 50%;
+      -webkit-transition: -webkit-transform 1s ease-in-out;
+      transition: -webkit-transform 1s ease-in-out;
+      transition: transform 1s ease-in-out;
+      transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; }
+    #greeting_box_wrapper .main_container .grid_box_first,
+    #greeting_box_wrapper .main_container .grid_box_second {
       top: 0; }
-    #greeting_box_wrapper .main_container .grid_box_third, #greeting_box_wrapper .main_container .grid_box_fourth {
+    #greeting_box_wrapper .main_container .grid_box_third,
+    #greeting_box_wrapper .main_container .grid_box_fourth {
       bottom: 0; }
-    #greeting_box_wrapper .main_container .grid_box_first, #greeting_box_wrapper .main_container .grid_box_third {
+    #greeting_box_wrapper .main_container .grid_box_first,
+    #greeting_box_wrapper .main_container .grid_box_third {
       left: 0; }
-    #greeting_box_wrapper .main_container .grid_box_second, #greeting_box_wrapper .main_container .grid_box_fourth {
+    #greeting_box_wrapper .main_container .grid_box_second,
+    #greeting_box_wrapper .main_container .grid_box_fourth {
       right: 0; }
     #greeting_box_wrapper .main_container .grid_box_first {
-      background-color: orange; }
+      background-color: #F4BFBF;
+      -webkit-transform-origin: top left;
+              transform-origin: top left; }
     #greeting_box_wrapper .main_container .grid_box_second {
-      background-color: greenyellow; }
+      background-color: #C2DED1;
+      -webkit-transform-origin: top right;
+              transform-origin: top right; }
     #greeting_box_wrapper .main_container .grid_box_third {
-      background-color: skyblue; }
+      background-color: #8CC0DE;
+      -webkit-transform-origin: bottom left;
+              transform-origin: bottom left; }
     #greeting_box_wrapper .main_container .grid_box_fourth {
-      background-color: yellow; }
+      background-color: #FAF4B7;
+      -webkit-transform-origin: bottom right;
+              transform-origin: bottom right; }
+    #greeting_box_wrapper .main_container:hover .grid_box_first,
+    #greeting_box_wrapper .main_container:hover .grid_box_fourth {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    #greeting_box_wrapper .main_container:hover .grid_box_second,
+    #greeting_box_wrapper .main_container:hover .grid_box_third {
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
