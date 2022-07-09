@@ -1,0 +1,85 @@
+// __________SASS File__________ //
+
+// Adding Font
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+// Variable Declaration
+$background-color: lightcyan;
+$color-shade-1: orange;
+$color-shade-2: greenyellow;
+$color-shade-3: skyblue;
+$color-shade-4: yellow;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  background-color: $background-color;
+}
+
+// Wrapper
+#greeting_box_wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main_container {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    .grid {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+    }
+
+    .grid_box_first, .grid_box_second {
+      top: 0;
+    }
+
+    .grid_box_third, .grid_box_fourth {
+      bottom: 0;
+    }
+
+    .grid_box_first, .grid_box_third {
+      left: 0;
+    }
+
+    .grid_box_second, .grid_box_fourth {
+      right: 0;
+    }
+
+    .grid_box_first {
+      background-color: $color-shade-1;
+    }
+
+    .grid_box_second {
+      background-color: $color-shade-2;
+    }
+
+    .grid_box_third {
+      background-color: $color-shade-3;
+    }
+
+    .grid_box_fourth {
+      background-color: $color-shade-4;
+    }
+  }
+
+}
