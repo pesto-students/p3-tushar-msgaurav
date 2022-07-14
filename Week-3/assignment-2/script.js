@@ -1,4 +1,4 @@
-// crate car1 object:
+// create car1 object:
 const car1 = {
   company: 'Jaguar',
   transmission: 'Automatic',
@@ -7,7 +7,7 @@ const car1 = {
   }
 };
 
-// crate car2 object:
+// create car2 object:
 const car2 = {
   company: 'Tesla',
   transmission: 'Automatic'
@@ -40,7 +40,7 @@ const newCar = car1.getColorModal.bind(car1, 'Black', '2022');
 console.log(newCar());    // return => Jaguar, Automatic, Black, 2022
 
 /*
-  Difference b/w call(), apply(), bind():
+  Difference b/w call(), apply() & bind():
   - call() & apply() function for borrowing methods from an object and call the function immediately
   - bind() function is helpful for developer to call function later with a certain value or certain "this" keyword
 */
