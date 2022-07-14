@@ -6,7 +6,5 @@ Welcome to Pesto Tech. This is the [Week-3 Assignment](https://pestotech.teachab
 ### Assignment-1:
 *Create a memoize function that remembers previous inputs and stores them in cache so that it won’t have to compute the same inputs more than once. The function will take an unspecified number of integer inputs and a reducer method.*
 
----
-
 ### Assignment-2:
 *Create 3 simple functions where call, bind and apply are used. The intention of this exercise isto understand how they work and their differences.*
