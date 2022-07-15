@@ -51,3 +51,6 @@ console.log(stack.get()); // => [10]
 ```
 
 > We've moved "items" variable inside createStack() function scope. Now we can't access or modify "items" array from outer scope of createStack() function.
+
+> We can use push() & pop() method to modify the "items" array as these methods are public. But can't modify directly like this way: <br/>
+``` stack.items = [10, 100, 1000]; ```
