@@ -13,3 +13,6 @@ Welcome to Pesto Tech. This is the [Week-3 Assignment](https://pestotech.teachab
 
 ### Assignment-3:
 *A code snippet query of Closure functionality.*
+
+### Assignment-4:
+*Refactor the stack implementation, using the concept of closure, such that there is no way to access items array outside of createStack() function scope.*
