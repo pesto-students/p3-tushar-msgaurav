@@ -10,3 +10,6 @@ Welcome to Pesto Tech. This is the [Week-3 Assignment](https://pestotech.teachab
 
 ### Assignment-2:
 *Create 3 simple functions where call, bind and apply are used. The intention of this exercise isto understand how they work and their differences.*
+
+### Assignment-3:
+*A code snippet query of Closure functionality.*
